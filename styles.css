@@ -164,21 +164,27 @@ ul {
 
 .gallery-image {
     width: 30rem;
-}
-
-/* separate-image-from-gallery-item-info*/
-
-.gallery-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* separate-image-from-gallery-item-info*/
+
+.gallery-item{
+    position: relative;
+}
+
 .gallery-item-info {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    z-index: -1;
 }
+
 
 /* gallery-grid */
 
