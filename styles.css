@@ -72,6 +72,7 @@ p {
     padding: 10px;
     border: 1px solid black;
     margin: 0 auto;
+    max-width: 90rem;
 }
 
             /* profile-layout */ 
@@ -103,27 +104,27 @@ ul {
     grid-column: 1 / 1;
     grid-row: 1 / -1;
     align-content: center;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .profile-user-settings {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .profile-stats {
     grid-column: 2 / -1;
     grid-row: 2 / 3;
     align-content: center;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
 }
 
 .profile-bio {
     grid-column: 2 / -1;
     grid-row: 3 / -1;
     align-content: center;
-    background-color: lightgoldenrodyellow;
+    /* background-color: lightgoldenrodyellow; */
 }
 
 /* responsive-profile-layout */
@@ -131,32 +132,29 @@ ul {
 @media only screen and (max-width:835px) {
     .profile {
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 1fr 1fr;
+        grid-template-rows: 3fr 1fr 1fr 1fr;
     }
     .profile-image {
         grid-column: 1 /-1;
         grid-row: 1 / 2;
         align-content: center;
-        background-color: aqua;
     }
     
     .profile-user-settings {
         grid-column: 1 / -1;
         grid-row: 2 / 3;
-        background-color: aquamarine;
     }
     
     .profile-stats {
         grid-column: 1 / -1;
         grid-row: 3 / 4;
         align-content: center;
-        background-color: lightgreen;
+        justify-content: start;
     }
     
     .profile-bio {
         grid-column: 1 / -1;
         grid-row: 4 / -1;
         align-content: center;
-        background-color: lightgoldenrodyellow;
     }
 }
