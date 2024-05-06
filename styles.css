@@ -213,8 +213,11 @@ ul {
 /* hover-effects-for-grid-items */
 
 .gallery-item:hover {
-    /* filter: brightness(.7); */
-    /* background-color: #0000004d; */
+    .gallery-image {
+        filter: brightness(.7);
+        background-color: #0000004d;
+    }
+    
     .gallery-item-info {
         z-index: 2;
     }
