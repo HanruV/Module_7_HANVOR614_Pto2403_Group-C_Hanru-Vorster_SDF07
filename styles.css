@@ -169,10 +169,15 @@ ul {
     object-fit: cover;
 }
 
+.visually-hidden {
+    display: none;
+}
+
 /* separate-image-from-gallery-item-info*/
 
 .gallery-item{
     position: relative;
+    font-size: 2rem;
 }
 
 .gallery-item-info {
@@ -180,11 +185,20 @@ ul {
     justify-content: flex-start;
     align-items: center;
     position: absolute;
-    top: 1px;
-    bottom: 1px;
+    top: 10px;
+    bottom: 10px;
     z-index: -1;
 }
 
+/* adding-icons-in-right-corner */
+
+.fa-clone, .fa-video {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+    color: white;
+}
 
 /* gallery-grid */
 
