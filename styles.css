@@ -21,3 +21,10 @@ body {
 img {
     display: block;
 }
+
+/* profile-image styles */
+
+.profile-img {
+    border: 14px solid #466e64;
+    border-radius: 50%;
+}
