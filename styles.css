@@ -22,9 +22,45 @@ img {
     display: block;
 }
 
-/* profile-image styles */
+/* profile-image-styles */
 
 .profile-img {
     border: 14px solid #466e64;
     border-radius: 50%;
+}
+
+/* profile-element-styles*/
+
+.profile-user-name {
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+
+.profile-edit-btn {
+    font-size: 1.5rem;
+    background-color: #fafafa;
+    border: 0.2rem solid lightgray;
+    border-radius: 3px;
+    padding: 2px 20px;
+    cursor: pointer;
+}
+
+.profile-settings-btn {
+    font-size: 2rem;
+    background-color: #fafafa;
+    border: none;
+}
+
+ul {
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.profile-stat-count, .profile-real-name {
+    font-weight: 600;
+    font-size: 1.5rem;
 }
