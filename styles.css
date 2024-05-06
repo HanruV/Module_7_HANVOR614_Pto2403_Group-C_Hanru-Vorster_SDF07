@@ -81,12 +81,14 @@ p {
     display: flex;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 ul {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 /* grid-items */
@@ -94,28 +96,67 @@ ul {
 .profile {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .profile-image {
     grid-column: 1 / 1;
     grid-row: 1 / -1;
     align-content: center;
+    background-color: aqua;
 }
 
 .profile-user-settings {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+    background-color: aquamarine;
 }
 
 .profile-stats {
     grid-column: 2 / -1;
     grid-row: 2 / 3;
     align-content: center;
+    background-color: lightgreen;
 }
 
 .profile-bio {
     grid-column: 2 / -1;
     grid-row: 3 / -1;
     align-content: center;
+    background-color: lightgoldenrodyellow;
+}
+
+/* responsive-profile-layout */
+
+@media only screen and (max-width:835px) {
+    .profile {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
+    }
+    .profile-image {
+        grid-column: 1 /-1;
+        grid-row: 1 / 2;
+        align-content: center;
+        background-color: aqua;
+    }
+    
+    .profile-user-settings {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        background-color: aquamarine;
+    }
+    
+    .profile-stats {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+        align-content: center;
+        background-color: lightgreen;
+    }
+    
+    .profile-bio {
+        grid-column: 1 / -1;
+        grid-row: 4 / -1;
+        align-content: center;
+        background-color: lightgoldenrodyellow;
+    }
 }
