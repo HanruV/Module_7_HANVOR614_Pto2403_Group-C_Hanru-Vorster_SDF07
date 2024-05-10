@@ -50,6 +50,7 @@ img {
     font-size: 2rem;
     background-color: #fafafa;
     border: none;
+    cursor: pointer;
 }
 
 ul {
@@ -159,6 +160,7 @@ ul {
 }
 
             /* gallery-element-styles */
+            
 /* images */
 
 .gallery-image {
@@ -217,7 +219,7 @@ ul {
         filter: brightness(.7);
         background-color: #0000004d;
     }
-    
+
     .gallery-item-info {
         z-index: 2;
     }
